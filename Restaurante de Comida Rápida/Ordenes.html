@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feane | Reservar Mesa</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="sub_page">
+  <!-- Header -->
+  <header class="header_Ordenes">
+    <div class="container-Ordenes">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>Feane</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item active"><a class="nav-link" href="Ordenes.html">Ordenes</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Order Section -->
+  <section class="order_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Place Your Order</h2>
+        <p>Fill in the form below and we’ll prepare your order right away 🍕</p>
+      </div>
+
+      <form id="orderForm" class="order_form">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="tel" class="form-control" placeholder="Phone Number" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Delivery Address" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <select class="form-control" required>
+              <option value="">Select Your Dish</option>
+              <option>Pizza</option>
+              <option>Burger</option>
+              <option>Pasta</option>
+              <option>Salad</option>
+              <option>Fries</option>
+            </select>
+          </div>
+          <div class="col-md-12 mb-3">
+            <textarea class="form-control" rows="4" placeholder="Additional notes (optional)"></textarea>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="submit" class="btn btn-warning">Place Order</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved by Feane.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("✅ Your order has been placed successfully! Thank you for choosing Feane!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
