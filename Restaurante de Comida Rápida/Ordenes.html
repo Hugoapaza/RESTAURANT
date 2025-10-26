@@ -1,95 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feane | Reservar Mesa</title>
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="" />
+
+  <title>Fusion Hub | Ordenar en Línea</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Nice Select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+  <!-- Font Awesome Style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Ordenes styles -->
+  <link href="css/Ordenes.css" rel="stylesheet" />
+
+
 </head>
 
 <body class="sub_page">
-  <!-- Header -->
-  <header class="header_Ordenes">
-    <div class="container-Ordenes">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>Feane</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-          <span></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-            <li class="nav-item active"><a class="nav-link" href="Ordenes.html">Ordenes</a></li>
-          </ul>
-        </div>
-      </nav>
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="" />
     </div>
-  </header>
+    
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>Fusion Hub</span>
+          </a>
 
-  <!-- Order Section -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Reservar Mesa.html">Reservar Mesa</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <!-- Icono de carrito de compras -->
+              <a class="cart_link" href="">
+                <i class="fa fa-shopping-cart" id="Capa_1" aria-hidden="true"></i>
+              </a>
+              <form class="form-inline">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="Ordenes.html" class="order_online">
+                Ordenar en Línea
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- order section -->
   <section class="order_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>Place Your Order</h2>
-        <p>Fill in the form below and we’ll prepare your order right away 🍕</p>
+        <h2>Realizar Pedido</h2>
       </div>
 
-      <form id="orderForm" class="order_form">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Full Name" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="email" class="form-control" placeholder="Email" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="tel" class="form-control" placeholder="Phone Number" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Delivery Address" required>
-          </div>
-          <div class="col-md-12 mb-3">
-            <select class="form-control" required>
-              <option value="">Select Your Dish</option>
-              <option>Pizza</option>
-              <option>Burger</option>
-              <option>Pasta</option>
-              <option>Salad</option>
-              <option>Fries</option>
-            </select>
-          </div>
-          <div class="col-md-12 mb-3">
-            <textarea class="form-control" rows="4" placeholder="Additional notes (optional)"></textarea>
-          </div>
-          <div class="col-md-12 text-center">
-            <button type="submit" class="btn btn-warning">Place Order</button>
+      <!-- Mensaje de éxito -->
+      <div id="successAlert" class="success-alert">
+        <i class="fa fa-check-circle"></i> ¡Tu pedido ha sido realizado con éxito! Nos pondremos en contacto contigo pronto.
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="order_form">
+            <form id="orderForm" action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Tu Nombre" required />
+              </div>
+              <div>
+                <input type="tel" class="form-control" placeholder="Número de Teléfono" required />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Tu Correo Electrónico" required />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Dirección de Entrega" required />
+              </div>
+              <div>
+                <select class="form-control nice-select wide" required>
+                  <option value="" disabled selected>Selecciona tu Platillo</option>
+                  <option value="pizza">Pizza Deliciosa - S/20</option>
+                  <option value="burger">Hamburguesa Deliciosa - S/15</option>
+                  <option value="pasta">Pasta Deliciosa - S/18</option>
+                  <option value="fries">Papas Fritas - S/10</option>
+                  <option value="combo">Combo Especial - S/35</option>
+                </select>
+              </div>
+              <div>
+                <input type="number" class="form-control" placeholder="Cantidad" min="1" value="1" required />
+              </div>
+              <div>
+                <textarea class="form-control" placeholder="Notas adicionales (opcional)"></textarea>
+              </div>
+              <div class="btn_box">
+                <button type="submit">Realizar Pedido</button>
+              </div>
+            </form>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   </section>
+  <!-- end order section -->
 
-  <!-- Footer -->
+  <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
-      <p>&copy; <span id="displayYear"></span> All Rights Reserved by Feane.</p>
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>Contáctanos</h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Ubicación</span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>Llamar +01 1234567890</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>FusionHub@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">Feane</a>
+            <p>
+              Necesario, haciendo de este el primer generador verdadero en Internet.
+              Utiliza un diccionario de más de 200 palabras latinas, combinado con...
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Horario de Atención</h4>
+          <p>Todos los días</p>
+          <p>10:00 a.m. - 10:00 p.m.</p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> Todos los derechos reservados por
+          <a href="https://html.design/">Free Html Templates</a><br /><br />
+          &copy; <span id="displayYear"></span> Creado por
+          <a href="https://themewagon.com/" target="_blank">Victor Hugo</a>
+        </p>
+      </div>
     </div>
   </footer>
+  <!-- footer section -->
 
+  <!-- Icono de WhatsApp -->
+  <div class="icono-whatsapp">
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20más%20información" class="whatsapp-button" target="_blank" title="Escríbenos por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Scripts -->
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <script src="js/custom.js"></script>
+
   <script>
-    document.getElementById("orderForm").addEventListener("submit", function (e) {
+    // Actualizar año
+    document.getElementById('displayYear').textContent = new Date().getFullYear();
+    
+    // Inicializar nice select
+    if (typeof $.fn.niceSelect !== 'undefined') {
+      $('select').niceSelect();
+    }
+    
+    // Manejo del formulario
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert("✅ Your order has been placed successfully! Thank you for choosing Feane!");
+      
+      // Mostrar mensaje de éxito
+      const successAlert = document.getElementById('successAlert');
+      successAlert.classList.add('show');
+      
+      // Scroll al mensaje
+      successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Reset del formulario
       this.reset();
+      
+      // Reinicializar nice select después del reset
+      if (typeof $.fn.niceSelect !== 'undefined') {
+        $('select').niceSelect('update');
+      }
+      
+      // Ocultar mensaje después de 5 segundos
+      setTimeout(function() {
+        successAlert.classList.remove('show');
+      }, 5000);
     });
   </script>
 </body>

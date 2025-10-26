@@ -1,0 +1,246 @@
+    /* Estilos personalizados para el menú completo */
+    .menu_hero {
+      padding: 80px 0 60px 0;
+      background: linear-gradient(135deg, #ffbe33 0%, #ff9800 100%);
+      color: white;
+      text-align: center;
+    }
+    
+    .menu_hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .menu_hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .category_section {
+      padding: 60px 0;
+    }
+    
+    .category_section:nth-child(even) {
+      background: #f8f9fa;
+    }
+    
+    .category_header {
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    
+    .category_header h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 15px;
+      display: inline-block;
+      position: relative;
+    }
+    
+    .category_header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: #ffbe33;
+      border-radius: 2px;
+    }
+    
+    .category_header .icon {
+      font-size: 50px;
+      color: #ffbe33;
+      margin-bottom: 15px;
+    }
+    
+    .category_header p {
+      color: #666;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    
+    .menu_item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: all 0.3s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .menu_item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    
+    .menu_item .img_box {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .menu_item .img_box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+    
+    .menu_item:hover .img_box img {
+      transform: scale(1.1);
+    }
+    
+    .menu_item .badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #ffbe33;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    
+    .menu_item .badge.new {
+      background: #4caf50;
+    }
+    
+    .menu_item .badge.popular {
+      background: #ff5722;
+    }
+    
+    .menu_item .content {
+      padding: 25px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .menu_item h5 {
+      color: #222;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    
+    .menu_item .description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+    
+    .menu_item .ingredients {
+      color: #999;
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+    
+    .menu_item .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      border-top: 2px solid #f0f0f0;
+    }
+    
+    .menu_item .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffbe33;
+    }
+    
+    .menu_item .add_btn {
+      background: #ffbe33;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    
+    .menu_item .add_btn:hover {
+      background: #ff9800;
+      transform: scale(1.05);
+    }
+    
+    .special_offers {
+      background: linear-gradient(135deg, #ffbe33 0%, #ff9800 100%);
+      padding: 80px 0;
+      color: white;
+    }
+    
+    .offer_card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      color: #222;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+    
+    .offer_card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .offer_card .icon {
+      font-size: 60px;
+      color: #ffbe33;
+      margin-bottom: 20px;
+    }
+    
+    .offer_card h4 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .offer_card .discount {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff5722;
+      margin: 20px 0;
+    }
+    
+    .offer_card p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .offer_card .btn {
+      background: #ffbe33;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    @media (max-width: 768px) {
+      .menu_hero h1 {
+        font-size: 32px;
+      }
+      
+      .category_header h2 {
+        font-size: 28px;
+      }
+    }

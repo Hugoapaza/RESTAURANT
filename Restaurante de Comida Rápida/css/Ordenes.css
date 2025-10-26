@@ -1,14 +1,88 @@
-.header_Ordenes .user_option .order_online {
-    background-color: #ff4a4a;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.header_section .user_option .order_online:hover {
-    background-color: #e04343;
-    color: #fff;
-    text-decoration: none;
-}
+/* Estilos adicionales para la página de ordenes */
+    .order_section {
+      padding: 90px 0 120px 0;
+        background-color: #575c4b;
+    }
+    
+    .order_section .heading_container {
+      margin-bottom: 45px;
+    }
+    
+    .order_form {
+      background: #ffffff;
+      padding: 45px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+    }
+    
+    .order_form .form-control {
+      height: 50px;
+      border: 1px solid #c9c9c9;
+      border-radius: 0;
+      padding-left: 15px;
+      margin-bottom: 25px;
+      background-color: transparent;
+      color: #000;
+    }
+    
+    .order_form textarea.form-control {
+      height: auto;
+      min-height: 100px;
+    }
+    
+    .order_form .form-control:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: #ffbe33;
+    }
+    
+    .order_form .btn_box {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+    }
+    
+    .order_form .btn_box button {
+      border: none;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 12px 55px;
+      background-color: #ffbe33;
+      color: #ffffff;
+      border-radius: 10px;
+      transition: all 0.3s;
+      border: 1px solid #ffbe33;
+      font-weight: 600;
+    }
+    
+    .order_form .btn_box button:hover {
+      background-color: transparent;
+      color: #ffbe33;
+    }
+    
+    .success-alert {
+      display: none;
+      background-color: #4caf50;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    .success-alert.show {
+      display: block;
+      animation: slideDown 0.5s ease;
+    }
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
